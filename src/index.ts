@@ -11,8 +11,8 @@ type CommandsParams = {
 
 const commands = async ({ client, message, openAI }: CommandsParams) => {
   const iaCommands = {
-    davinci3: "/ask",
-    dalle: "/img",
+    davinci3: "/gpt",
+    dalle: "/dalle",
   };
 
   const commandsMap = {
