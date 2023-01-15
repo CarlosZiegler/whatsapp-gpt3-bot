@@ -1,0 +1,31 @@
+{
+  "name": "whatsapp-gpt3-bot",
+  "author": "Carlos Ziegler <carlos.ziegler@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlosZiegler/whatsapp-gpt3-bot.git"
+  },
+  "version": "1.0.0",
+  "description": "GPT3 Chat integration with whatsapp",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "start": "node dist/index.js",
+    "dev": "tsup src/index.ts --watch --onSuccess 'node dist/index.js'",
+    "lint": "tsc"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
+    "venom-bot": "^4.3.7",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
